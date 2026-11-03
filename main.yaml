@@ -2,6 +2,6 @@
   hosts: "{{ component }}"
   become: yes
   roles: # By default it checks in roles folder in current directory
-  - "{{ component }}"
+    - "{{ component }}"
 
   ## encrpted to store the data
