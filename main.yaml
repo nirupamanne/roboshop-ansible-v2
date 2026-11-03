@@ -1,7 +1,13 @@
+# - name: configure {{component}}
+#   hosts: "{{ component }}"
+#   become: yes
+#   roles: # By default it checks in roles folder in current directory
+#     - "{{ component }}"
+
+#   ## encrpted to store the data
+
 - name: configure {{component}}
   hosts: "{{ component }}"
   become: yes
-  roles: # By default it checks in roles folder in current directory
+  roles:
     - "{{ component }}"
-
-  ## encrpted to store the data
